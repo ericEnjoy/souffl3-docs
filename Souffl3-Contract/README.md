@@ -94,6 +94,24 @@ souffl3_contract_address: 0xf6994988bd40261af9431cd6dd3fcf765569719e66322c7a05cc
 
 ### Buy
 
+| 函数id | 入参泛型 | 入参  |
+|------|--|---|
+| {{souffl3_contract_address}}::Aggregator::batch_buy_script_V1 | 无 | sender: &signer<br>markets: vector\<String\><br>listers: vector\<address\><br>prices: vector\<u64\><br>amounts: vector\<u64\><br>creators: vector\<address\><br>collections: vector\<String\><br>names: vector\<String\><br>property_versions: vector\<u64\><br>market_address_lists: vector\<address\><br>market_name_lists: vector\<String\>  |
+
+#### 入参详情
+| 参数名 | 类型 | 说明  |
+|------|--|---|
+| sender | &signer | 交易签名者 |
+| markets | vector\<String\> | NFT 挂单是市场列表，当前有三个可选值 （"Souffl3" / "BlueMove" / "Topaz") |
+| listers | vector\<address\> | NFT 挂单者列表 |
+| prices | vector\<u64\> | NFT 挂单价格列表 |
+| amounts | vector\<u64\> | NFT token amount 列表 |
+| creators | vector\<address\> | NFT creator 列表 |
+| collections | vector\<String\> | NFT collection name 列表 |
+| names | vector\<String\> | NFT token name 列表 |
+| property_versions | vector\<u64\> | NFT property version 列表 |
+| market_address_list | vector\<address\> | NFT market address 列表，如果对应挂单市场为 "Souffl3", 数组压入一个 {{souffl3_contract_address}} 即可，其他市场无需任何处理 |
+| market_name_list | vector\<String\> | NFT market name 列表，如果对应挂单市场为 "Souffl3", 数组压入 "souffle" 即可，其他市场无需处理 |
 ```
 {
   "function": "0xf6994988bd40261af9431cd6dd3fcf765569719e66322c7a05cc78a89cd366d4::Aggregator::batch_buy_script_V1",
