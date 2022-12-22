@@ -28,6 +28,20 @@ souffl3_contract_address: 0xf6994988bd40261af9431cd6dd3fcf765569719e66322c7a05cc
 |------|--|---|
 | {{souffl3_contract_address}}::FixedPriceMarket::batch_list_script | 0x1::aptos_coin::AptosCoin |  token_owner: &signer<br>creator_lists: vector<address><br>collection_lists: vector<String><br>name_lists: vector<String><br>property_version_lists: vector<u64><br>token_amount_lists: vector<u64><br>coin_amount_lists: vector<u64><br>locked_until_secs_lists: vector<u64><br>market_address_lists: vector<address><br>market_name_lists: vector<String>   |
 
+#### 入参详情
+| 参数名 | 类型 | 说明  |
+|------|--|---|
+| token_owner | &signer | 交易签名者 |
+| creator_list | vector<address> | NFT creator 列表 |
+| collection_list | vector<String> | NFT collection name 列表 |
+| name_list | vector<String> | NFT token name 列表 |
+| property_version_list | vector<u64> | NFT property version 列表 |
+| token_amount_list | vector<u64> | NFT token amount 列表 |
+| coin_ammout_list | vector<u64> | NFT 挂单价格列表 |
+| locked_until_secs_list | vector<u64> | NFT 挂单结束时间（0 为无结束时间挂单，市场上挂单基本都是 0） |
+| market_address_lists | vector<address> | NFT market address 列表，同 {{souffl3_contract_address}} |
+| market_name_list | vector<String> | NFT market name 列表，传入 "souffle" 即可 |
+
 ### Listing payload
 
 ```
