@@ -26,14 +26,7 @@ souffl3_contract_address: 0xf6994988bd40261af9431cd6dd3fcf765569719e66322c7a05cc
 
 | 函数id | 入参泛型 | 入参  |
 |------|--|---|
-| {{souffl3_contract_address}}::FixedPriceMarket::batch_list_script | 0x1::aptos_coin::AptosCoin |  token_owner: &signer<br>creator_lists: vector<address><br>collection_lists: vector<String>
-name_lists: vector<String>
-property_version_lists: vector<u64>
-token_amount_lists: vector<u64>
-coin_amount_lists: vector<u64>
-locked_until_secs_lists: vector<u64>
-market_address_lists: vector<address>
-market_name_lists: vector<String>   |
+| {{souffl3_contract_address}}::FixedPriceMarket::batch_list_script | 0x1::aptos_coin::AptosCoin |  token_owner: &signer<br>creator_lists: vector<address><br>collection_lists: vector<String><br>name_lists: vector<String><br>property_version_lists: vector<u64><br>token_amount_lists: vector<u64><br>coin_amount_lists: vector<u64><br>locked_until_secs_lists: vector<u64><br>market_address_lists: vector<address><br>market_name_lists: vector<String>   |
 
 ### Listing payload
 
