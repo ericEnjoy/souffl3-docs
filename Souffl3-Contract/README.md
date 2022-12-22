@@ -22,19 +22,19 @@ https://explorer.aptoslabs.com/txn/55091778
 
 ## 合约交互
 
-souffl3_market_contract_address: 0xf6994988bd40261af9431cd6dd3fcf765569719e66322c7a05cc78a89cd366d4
+souffl3_contract_address: 0xf6994988bd40261af9431cd6dd3fcf765569719e66322c7a05cc78a89cd366d4
 
 | 函数id | 入参泛型 | 入参  |
 |------|--|---|
-| 0xf6994988bd40261af9431cd6dd3fcf765569719e66322c7a05cc78a89cd366d4::FixedPriceMarket::batch_list_script | 0x1::aptos_coin::AptosCoin |  token_owner: &signer,
-creator_lists: vector<address>,
-collection_lists: vector<String>,
-name_lists: vector<String>,
-property_version_lists: vector<u64>,
-token_amount_lists: vector<u64>,
-coin_amount_lists: vector<u64>,
-locked_until_secs_lists: vector<u64>,
-market_address_lists: vector<address>,
+| {{souffl3_contract_address}}::FixedPriceMarket::batch_list_script | 0x1::aptos_coin::AptosCoin |  token_owner: &signer
+creator_lists: vector<address>
+collection_lists: vector<String>
+name_lists: vector<String>
+property_version_lists: vector<u64>
+token_amount_lists: vector<u64>
+coin_amount_lists: vector<u64>
+locked_until_secs_lists: vector<u64>
+market_address_lists: vector<address>
 market_name_lists: vector<String>   |
 
 ### Listing payload
