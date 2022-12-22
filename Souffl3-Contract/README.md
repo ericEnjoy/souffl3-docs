@@ -26,8 +26,8 @@ souffl3_contract_address: 0xf6994988bd40261af9431cd6dd3fcf765569719e66322c7a05cc
 
 | 函数id | 入参泛型 | 入参  |
 |------|--|---|
-| {{souffl3_contract_address}}::FixedPriceMarket::batch_list_script | 0x1::aptos_coin::AptosCoin |  token_owner: &signer
-creator_lists: vector<address>
+| {{souffl3_contract_address}}::FixedPriceMarket::batch_list_script | 0x1::aptos_coin::AptosCoin |  token_owner: &signer<br/>
+creator_lists: vector<address><br/>
 collection_lists: vector<String>
 name_lists: vector<String>
 property_version_lists: vector<u64>
